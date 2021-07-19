@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+$white: #fff;
+$pink: #c6538c;
+$font-body: Roboto, Helvetica Neue, sans-serif;
+$font-face: "Roobert", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+$font-for-button: "Pacifico", cursive;
+
+:root {
+    --custom-color-brand: #00c566;
+    --color-light-neutral-1: #f8fafd;
+    --tw-gradient-to: #ec4899;
+    --tw-gradient-from: #fb923c;
+}
+
+$theme-white: #fff;
+$color-brand: #00c566;
+
+// Responsive Brealpoint
+// Set Breakpoint Standard Devices
+// Note: Breakpoint = em * browsers font-size base(16px)
+// Example: 30em = 30*16 = 480px
+$mobile: 576px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+$largescreen: 1600px;
+$mobilesite: 991px;
+
+@mixin media($media) {
+    @if $media == mobile {
+        @media only screen and (min-width: $mobile) {
+            @content;
+        }
+    }
+    @if $media == tablet {
+        @media only screen and (min-width: $tablet) {
+            @content;
+        }
+    } @else if $media == laptop {
+        @media only screen and (min-width: $laptop) {
+            @content;
+        }
+    } @else if $media == desktop {
+        @media only screen and (min-width: $desktop) {
+            @content;
+        }
+    } @else if $media == largescreen {
+        @media only screen and (min-width: $largescreen) {
+            @content;
+        }
+    } @else if $media == mobilesite {
+        @media only screen and (max-width: $mobilesite) {
+            @content;
+        }
+    } @else if $media == smallscreen {
+        @media only screen and (max-width: $mobile) {
+            @content;
+        }
+    } @else if $media == smalldesktop {
+        @media only screen and (min-width: $tablet) and (max-width: $desktop) {
+            @content;
+        }
+    }
+}

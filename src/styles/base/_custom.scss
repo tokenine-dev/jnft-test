@@ -1,0 +1,342 @@
+:root {
+    --bg-dark: #1f2329;
+    --text-color-title: #fff;
+    --link-color: #fb5c40;
+    --hover-link-color: #fb5c40;
+    --text-color-body: #fff;
+}
+
+// THEME
+.darktheme {
+    background-color: var(--bg-dark);
+}
+
+.max-w-screen-xl {
+    max-width: 1440px !important;
+}
+
+// ====================================== CUSTOM
+.custom {
+    &\:theme {
+        visibility: visible;
+    }
+
+    // TITLE
+    &\:title-creators {
+        font-family: $font-for-button;
+        background: linear-gradient(358deg, #ff7a18, #ec4899 41.07%, #00bcc7 76.05%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-color: #ec4899;
+    }
+
+    // Grid
+    &\:grid-gallery {
+        display: grid;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        // Laptop
+        @include media(laptop) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 48px;
+        }
+
+        // Destop
+        @include media(desktop) {
+            gap: 96px;
+        }
+    }
+
+    &\:grid-gallery-wrap {
+        margin: 0 -1rem;
+        @include media(tablet) {
+            margin: auto;
+        }
+    }
+
+    &\:wrap-content-heightlight {
+        @include media(desktop) {
+            visibility: visible;
+        }
+    }
+
+    &\:photo-art-cover-wrap {
+        width: 100%;
+    }
+
+    &\:photo-art-cover {
+        position: relative;
+        height: 60vh;
+        width: 100vw;
+        @include media(tablet) {
+            width: auto;
+            max-width: 100%;
+        }
+        @include media(desktop) {
+            height: 700px;
+            // width: 560px;
+            width: auto;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 20px 20px);
+        }
+    }
+
+    &\:cover-art-sqauare {
+        position: relative;
+        padding-bottom: 100%;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &\:height-full-screen {
+        min-height: 100vh;
+    }
+
+    // BUTTON
+    &\:button-custom-style {
+        font-family: $font-for-button;
+        background: linear-gradient(130deg, #ff7a18, #ec4899 41.07%, #00bcc7 76.05%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-color: #ec4899;
+        &:hover {
+            border-color: #222;
+        }
+    }
+
+    &\:button-gradient {
+        background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+
+        &:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    // LINEHEIGHT
+    &\:line-height-1 {
+        line-height: 1;
+    }
+
+    // BORDER
+    &\:hover-border-dashed:hover {
+        border-color: #dd2476;
+    }
+
+    // FORM
+    &\:h-textarea {
+        height: 95px;
+    }
+
+    &\:artwork-card {
+        visibility: inherit;
+    }
+
+    // SELECT
+    select {
+        // A reset of styles, including removing the default dropdown arrow
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        width: 100%;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: inherit;
+        line-height: inherit;
+
+        // Stack above custom arrow
+        z-index: 1;
+
+        // Remove dropdown arrow in IE10 & IE11
+        // @link https://www.filamentgroup.com/lab/select-css.html
+        &::-ms-expand {
+            display: none;
+        }
+
+        // Remove focus outline, will add on alternate element
+        outline: none;
+    }
+
+    // Interim solution until :focus-within has better support
+    select:focus + .focus {
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        right: -1px;
+        bottom: -1px;
+        border: 2px solid transparent;
+        border-radius: inherit;
+    }
+
+    &\:select {
+        display: grid;
+        grid-template-areas: "select";
+        align-items: center;
+        position: relative;
+
+        select,
+        &::after {
+            grid-area: select;
+        }
+
+        min-width: 100px;
+        cursor: pointer;
+        line-height: 1.1;
+
+        // Optional styles
+        // remove for transparency
+        background-color: #fff;
+        background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+
+        // Custom arrow
+        &:not(.select--multiple)::after {
+            content: "";
+            justify-self: end;
+            width: 0.8em;
+            height: 0.5em;
+            background-color: #1f2329;
+            clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+        }
+    }
+
+    // TABLE
+    &\:table-with-8\/12 {
+        @include media(tablet) {
+            width: 66.666667%;
+        }
+    }
+
+    // WIDTH
+    &\:w-3\/4 {
+        width: 100%;
+        @include media(desktop) {
+            width: 65%;
+        }
+    }
+
+    // COVER PROFILE PAGE
+    &\:cover-profile-page {
+        background-image: url("../../assets/img/bg_cover_fix.jpg");
+        background-size: cover;
+    }
+
+    &\:preview-photo {
+        > img {
+            @include media(tablet) {
+                // max-height: 640px;
+            }
+        }
+    }
+
+    &\:max-width-follow {
+        padding-bottom: 2rem;
+        @include media(tablet) {
+            padding-bottom: 0;
+            max-width: 520px;
+            padding-left: 115px;
+        }
+    }
+
+    &\:profile-avatar {
+        margin: auto;
+    }
+
+    // DOTS
+    &\:dot-connected {
+        font-size: 30px;
+        line-height: 1;
+        color: green;
+        margin-right: 8px;
+    }
+}
+
+.hero-body {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.hero-foot,
+.hero-head {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.is-flex-direction-column {
+    flex-direction: column !important;
+}
+
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+.custom {
+    &\:spinners {
+        height: 20px;
+        width: 20px;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        opacity: 1;
+        display: inline-block;
+        position: relative;
+        -webkit-transition: all 0.3s ease-in-out 0;
+        transition: all 0.3s ease-in-out 0;
+    }
+}
+
+.double-bounce1,
+.double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: bounce 2s infinite ease-in-out;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+// ====================================== CUSTOM : FOOTER

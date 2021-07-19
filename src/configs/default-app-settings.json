@@ -1,0 +1,10 @@
+{
+    "dev_mode": {
+        "is_active": false
+    },
+    "features": {
+        "topbar": {
+            "is_active": true
+        }
+    }
+}

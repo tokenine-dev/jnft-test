@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1958px" height="549px" viewBox="0 0 1958 549" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>JNFT.logo.white</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+        <g id="JNFT.logo.white" fillRule="nonzero">
+            <path d="M406.85,0.6 L406,373.52 C406,489.18 326.39,548.4 210,548.4 C93.61,548.4 13,468.7 13,353 L13,338.19 L97.4,338.19 L97.4,355.38 C97.4,425.72 144.77,467.18 211.98,467.18 C279.19,467.18 300.73,426.59 300.73,356.26 L297.84,0.75 L406.85,0.6 Z" id="Path" fill="#231F20"></path>
+            <polygon id="Path" fill="#231F20" points="846.54 541.53 584.61 194.6 584.61 541.53 467.94 541.53 467.94 0.67 579.2 0.67 841.91 348.36 841.91 0.67 957.81 0.67 957.81 541.53"></polygon>
+            <polygon id="Path" fill="#231F20" points="1791.93 104.2 1791.93 541.53 1669.85 541.53 1669.85 104.2 1505.28 104.2 1505.28 0.67 1957.28 0.67 1957.28 104.2"></polygon>
+            <rect id="Rectangle" fill="#231F20" x="1064" y="0" width="118" height="545"></rect>
+            <rect id="Rectangle" fill="#231F20" x="1196" y="0" width="246" height="101"></rect>
+            <rect id="Rectangle" fill="#231F20" x="1196" y="236" width="200" height="101"></rect>
+            <g id="Group" opacity="0.61" fill="#00FF00">
+                <path d="M393.85,0.6 L393,373.52 C393,489.18 313.39,548.4 197,548.4 C80.61,548.4 0,468.7 0,353 L0,338.19 L84.4,338.19 L84.4,355.38 C84.4,425.72 131.77,467.18 198.98,467.18 C266.19,467.18 287.73,426.59 287.73,356.26 L284.84,0.75 L393.85,0.6 Z" id="Path"></path>
+                <polygon id="Path" points="844.54 541.53 582.61 194.6 582.61 541.53 465.94 541.53 465.94 0.67 577.2 0.67 839.91 348.36 839.91 0.67 955.81 0.67 955.81 541.53"></polygon>
+                <polygon id="Path" points="1771.93 104.2 1771.93 541.53 1649.85 541.53 1649.85 104.2 1485.28 104.2 1485.28 0.67 1937.28 0.67 1937.28 104.2"></polygon>
+                <rect id="Rectangle" x="1038" y="0" width="118" height="545"></rect>
+                <rect id="Rectangle" x="1170" y="0" width="246" height="101"></rect>
+                <rect id="Rectangle" x="1170" y="236" width="200" height="101"></rect>
+            </g>
+            <g id="Group" transform="translate(14.000000, 0.000000)" fill="#FFFFFF">
+                <path d="M393.85,0.6 L393,373.52 C393,489.18 313.39,548.4 197,548.4 C80.61,548.4 0,468.7 0,353 L0,338.19 L84.4,338.19 L84.4,355.38 C84.4,425.72 131.77,467.18 198.98,467.18 C266.19,467.18 287.73,426.59 287.73,356.26 L284.84,0.75 L393.85,0.6 Z" id="Path"></path>
+                <polygon id="Path" points="844.54 541.53 582.61 194.6 582.61 541.53 465.94 541.53 465.94 0.67 577.2 0.67 839.91 348.36 839.91 0.67 955.81 0.67 955.81 541.53"></polygon>
+                <polygon id="Path" points="1771.93 104.2 1771.93 541.53 1649.85 541.53 1649.85 104.2 1485.28 104.2 1485.28 0.67 1937.28 0.67 1937.28 104.2"></polygon>
+                <rect id="Rectangle" x="1038" y="0" width="118" height="545"></rect>
+                <rect id="Rectangle" x="1170" y="0" width="246" height="101"></rect>
+                <rect id="Rectangle" x="1170" y="236" width="200" height="101"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

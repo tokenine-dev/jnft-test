@@ -1,0 +1,165 @@
+@import "variables";
+
+body {
+    background: $theme-white;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: $font-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-face;
+}
+
+.pl-7 {
+    padding-bottom: 0.5rem;
+}
+
+.pr-12 {
+    padding-top: 0.5rem;
+}
+
+input:focus,
+input:focus-visible,
+button:focus,
+button:focus-visible {
+    outline-offset: 0px;
+    outline-color: transparent;
+}
+
+.outline\:none {
+    outline: none;
+}
+// CUSTOM Background
+.background-light-neutral {
+    background-color: var(--color-light-neutral-1);
+}
+
+// ========================================== Image, SVG, Icons
+.svg-fill {
+    &\:gray-50 {
+        --tw-text-opacity: 1;
+        fill: rgba(156, 163, 175, var(--tw-text-opacity));
+    }
+}
+
+.icon {
+    &\:squre {
+        height: 38px;
+        width: 38px;
+    }
+}
+
+// ====================================== CUSTOM
+.custom {
+    &\:lg {
+        &\:container {
+            @include media(desktop) {
+                max-width: 1040px;
+            }
+        }
+    }
+
+    &\:width-logo-farm {
+        max-width: 64px;
+    }
+
+    &\:type-link {
+        color: var(--custom-color-brand);
+    }
+}
+
+.header-icon {
+    visibility: visible;
+}
+
+// ========================================== BUTTON
+.custom-ui {
+    // BUTTUN
+    .text-color-brand {
+        border-color: var(--custom-color-brand);
+        color: var(--custom-color-brand);
+    }
+
+    .button-cta {
+        background-color: var(--custom-color-brand);
+        color: $white;
+        border-color: var(--custom-color-brand);
+    }
+
+    .hover {
+        &\:text-color-brand:hover {
+            background-color: var(--custom-color-brand);
+            color: $white;
+        }
+
+        &\:button-cta-opacity-8:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .active-menu {
+        color: var(--custom-color-brand);
+    }
+
+    .hover-link {
+        &\:text-color-brand:hover {
+            color: var(--custom-color-brand);
+        }
+    }
+}
+
+// NAV
+#nav {
+    li {
+        font-family: $font-face;
+    }
+}
+
+//--------------------drop down------------------
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 175px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content-button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content-hover:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }

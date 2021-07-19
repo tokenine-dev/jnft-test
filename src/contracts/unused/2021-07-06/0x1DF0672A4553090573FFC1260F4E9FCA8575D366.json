@@ -1,0 +1,10 @@
+{
+  "name": "JVC-Peg JFIN-T Token (JFIN-T) on BSC Testnet",
+  "address": "0x1df0672a4553090573Ffc1260F4E9fcA8575d366",
+  "code": "JFIN",
+  "type": "ERC20",
+  "symbol": "JFIN-T",
+  "chainId": 97,
+  "network": "bsc-testnet",
+  "abi": "ERC20"
+}

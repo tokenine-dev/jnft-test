@@ -1,0 +1,10 @@
+{
+  "name": "Fake JFIN (fJFIN) on BSC Testnet",
+  "address": "0x92CEcc51e0236460534E38A0517FA51A3D614Dcf",
+  "code": "FJFIN",
+  "type": "ERC20",
+  "symbol": "fJFIN",
+  "chainId": 97,
+  "network": "bsc-testnet",
+  "abi": "ERC20"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Wrapped BNB (WBNB) on BSC Testnet",
+  "address": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
+  "code": "WBNB",
+  "type": "ERC20",
+  "symbol": "WBNB",
+  "chainId": 97,
+  "network": "bsc-testnet",
+  "abi": "ERC20"
+}
